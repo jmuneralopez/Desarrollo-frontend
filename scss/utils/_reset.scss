@@ -1,0 +1,19 @@
+@use "variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: v.$font-main;
+  background: v.$color-light;
+  color: v.$color-dark;
+  line-height: 1.5;
+}

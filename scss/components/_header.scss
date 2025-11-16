@@ -1,0 +1,18 @@
+@use "../utils/variables" as v;
+
+header {
+  padding: v.$sp-lg 0;
+  text-align: center;
+  background: v.$color-light;
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: v.$sp-md;
+    color: v.$color-dark;
+  }
+
+  p {
+    color: v.$color-muted;
+    font-size: 1.1rem;
+  }
+}

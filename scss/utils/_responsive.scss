@@ -1,0 +1,8 @@
+// Breakpoints
+$md: 768px;
+
+@mixin md {
+  @media (max-width: #{$md}) {
+    @content;
+  }
+}

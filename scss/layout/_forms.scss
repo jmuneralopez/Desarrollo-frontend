@@ -1,0 +1,13 @@
+@use "../utils/variables" as v;
+
+.form-control {
+  width: 100%;
+  padding: v.$sp-md;
+  border-radius: v.$radius;
+  border: 1px solid v.$color-muted;
+  margin-bottom: v.$sp-md;
+}
+
+label {
+  font-weight: 600;
+}

@@ -1,0 +1,24 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+footer {
+  background: v.$color-dark;
+  color: white;
+  text-align: center;
+  padding: v.$sp-lg;
+
+  a {
+    color: v.$color-primary;
+    text-decoration: none;
+    @include m.transition;
+
+    &:hover {
+      color: v.$color-secondary;
+    }
+  }
+
+  .footer-copy {
+    margin-top: v.$sp-md;
+    font-size: 0.9rem;
+  }
+}

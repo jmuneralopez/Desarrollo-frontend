@@ -1,0 +1,31 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: v.$radius;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  @include m.transition;
+
+  &--primary {
+    background: v.$color-primary;
+    color: white;
+
+    &:hover {
+      background: v.$color-secondary;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    border: 2px solid v.$color-dark;
+    color: v.$color-dark;
+
+    &:hover {
+      background: v.$color-dark;
+      color: white;
+    }
+  }
+}

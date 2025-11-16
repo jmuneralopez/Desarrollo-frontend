@@ -1,0 +1,58 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+@use "../utils/responsive" as r;
+
+.navbar {
+  padding: v.$sp-md 0;
+  background: v.$color-light;
+  box-shadow: v.$shadow;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: v.$sp-md;
+
+    a {
+      text-decoration: none;
+      color: v.$color-dark;
+      font-weight: 500;
+      @include m.transition;
+
+      &:hover {
+        color: v.$color-primary;
+      }
+    }
+  }
+
+  #navToggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+  }
+
+  @include r.md {
+    #navToggle {
+      display: block;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: v.$sp-md;
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
+}

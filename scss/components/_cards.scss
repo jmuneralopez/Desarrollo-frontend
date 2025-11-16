@@ -1,0 +1,25 @@
+@use "../utils/variables" as v;
+
+.card {
+  background: white;
+  border-radius: v.$radius;
+  box-shadow: v.$shadow;
+  overflow: hidden;
+  padding: v.$sp-md;
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: v.$radius;
+  }
+
+  h3 {
+    margin-top: v.$sp-md;
+    font-size: 1.3rem;
+  }
+
+  p {
+    color: v.$color-muted;
+  }
+}
